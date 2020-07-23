@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <h1 id="demo" style='color:lightblue'></h1> 
+    <h4 id="time1" style="color:lightslategray"></h4>
+    </head>
+    <body>
+        <script>
+        let x=prompt("Enter your Name"," ");
+        document.getElementById("demo").innerHTML=`Welcome ${x}`;
+        let c_time=document.getElementById("time1");
+    
+        function dark(){
+            document.body.style.backgroundColor='black';
+        }
+        function clock(){
+            let date=new Date();
+            let time=date.toLocaleTimeString();
+            c_time.innerText=time;
+        }
+        clock();
+        setInterval(clock,1000);
+        </script>
+       <p>
+        <input type="button" value="Switch to Dark Mode" onclick="dark()"></input>
+        </p>
+    </body>
+</html>
