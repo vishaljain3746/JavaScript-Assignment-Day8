@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+    let a =['Blue','Green','Yellow','Violet','Indigo'];
+    for (let i=0; i<=a.length; i++){ 
+    task(i); 
+    }
+    function task(i) { 
+    setTimeout(function() { 
+        document.body.style.backgroundColor=a[i];
+            }, 5000*i); 
+        } 
+        </script>
+    </body>
+</html>
